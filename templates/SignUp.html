@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Learn Login Page </title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signup.css') }}">
+    <!--<link rel="stylesheet" href="./assets/css/style.css">-->
+    <style>
+        .source{
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+
+            <div class="source"><span>Student Sigup for Easy Learn</span></div>
+
+            <div class="form-body">
+                <h3 class="title">Signup for Easy Learn </h3>
+
+                <form action="" class="sign-up-form" method = "post">
+
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div><!-- FORM BODY-->
+
+            <!-- <div class="form-footer">
+                <div>
+                    <span>Don't have an account?</span> <a href="">Sign Up</a>
+                </div>
+            </div>FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+
+</body>
+</html>
